@@ -11,21 +11,21 @@ DL model to classify sad faces from happy ones
 
 2 - Change into the created wd:
   
-  > **cd image_classifier/\<\<type the name of your choice\>\>*
+  >**cd image_classifier/\<\<type the name of your choice\>\>*
 
 3 - Use the python command to create the virtual env:
   
-  > **python -m venv imageclassification/\<\<type the name of your choice>>*
+  >**python -m venv imageclassification/\<\<type the name of your choice>>*
   
 4 - Activate venv: 
 
-  > **.\imageclassification\Scripts\activate**
+  >**.\imageclassification\Scripts\activate**
 
 5 - Associate venv to jupyter : 
 
-  > **pip install ipkernel* 
+  >**pip install ipkernel** 
   > 
-  > *python -m ipykernel install --name=imageclassification*
+  >**python -m ipykernel install --name=imageclassification**
 
 6 - Close and restart jupyter lab 
 
