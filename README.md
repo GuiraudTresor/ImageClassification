@@ -24,6 +24,7 @@ DL model to classify sad faces from happy ones
 5 - Associate venv to jupyter : 
 
 > *pip install ipkernel* 
+> 
 > *python -m ipykernel install --name=imageclassification*
 
 6 - Close and restart jupyter lab 
