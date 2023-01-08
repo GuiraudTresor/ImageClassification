@@ -7,7 +7,7 @@ DL model to classify sad faces from happy ones
 
 1 - Create a folder/ directory using the command:
 
->*dir image_classifier/<<name>>*
+>**dir image_classifier/\<\<name\>\>**
 
 2 - Change into the created wd:
   
