@@ -6,9 +6,9 @@ DL model to classify sad faces from happy ones
 - In your terminal exceute the following steps to set up your working environment
 
 1 - Create a folder/ directory using the command:
-
-  >**dir image_classifier/\<\<name\>\>**
-
+  ´´´bash
+  dir image_classifier/\<\<name\>\>
+  ´´´
 2 - Change into the created wd:
   
   >**cd image_classifier/\<\<type the name of your choice\>\>*
