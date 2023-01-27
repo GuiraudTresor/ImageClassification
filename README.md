@@ -7,8 +7,8 @@ DL model to classify sad faces from happy ones
 
 1 - Create a folder/ directory using the command:
 
-  ```
-  > dir image_classifier/ <name>
+  ```bash
+  > mkdir image_classifier/ <name>
   ```
 2 - Change into the created wd:
   
@@ -17,7 +17,7 @@ DL model to classify sad faces from happy ones
   ```
 3 - Use the python command to create the virtual env:
   
-  ```
+  ```python
   > python -m venv imageclassification/ <type the name of your choice>
   ```
 4 - Activate venv: 
@@ -27,7 +27,7 @@ DL model to classify sad faces from happy ones
   ```
 5 - Associate venv to jupyter : 
 
-  ```bash
+  ```python
   > pip install ipkernel 
   > python -m ipykernel install --name=imageclassification
   ```
