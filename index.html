@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AI image classifier</title>
+    <style>
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin-top: 50px;
+        color: #333;
+      }
+    .images {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      .image-container {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #ccc;
+      }
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    input[type="file"] {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: dodgerblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+  </head>
+  <body>
+    <!-- My first AI image classifying model-->
+    <h1> Deploying deep learning model</h1>
+    <hr>
+    <h3> The ML model is used to classify happy from sad faces</h3>
+    The model was built using the python library Keras from the python modul Tensorflow. For more information on how the model was built please visit the link below
+    <a href="https://github.com/GuiraudTresor/ImageClassification/tree/master", target="_self", title="link to the model in github">AI_classification model
+    </a>
+
+  <div class="form-container">
+    <form action="prediction" method="post" enctype="multipart/form-data">
+      <label for="image-input">Choose an image:</label>
+      <input type="file" id="image-input" name="image">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+    <div class="images">
+      <div class="image-container">
+        <a href="https://www.mdanderson.org/cancer-types/adrenal-tumors.html">
+        <img src="/images/baby.jpg" alt="Baby in the hospital" height="800">
+        </a>
+      </div>
+      <div class="image-container">
+        <a href="https://www.mdanderson.org/cancer-types/adrenal-tumors.html">
+        <img src="http://netdoctor.cdnds.net/15/45/1600x800/landscape-1446719573-g-adrenal-glands-480792867.jpg" alt="Baby's cancer signs" height="800">
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
